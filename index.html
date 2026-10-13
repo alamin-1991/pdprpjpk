@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Misi Wira Cergas | PJPK</title>
+<style>
+:root{--navy:#15375b;--blue:#2878d0;--cyan:#35c6d4;--green:#24a879;--gold:#ffca4b;--ink:#18283e;--muted:#69788d;--bg:#f2f6fb;--card:#fff;--line:#e3eaf3;--red:#d94f61}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink)}button{font:inherit;cursor:pointer;border:0}button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.app{max-width:1080px;margin:auto;padding:20px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}.brand{display:flex;gap:11px;align-items:center}.logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:white;font-size:25px;box-shadow:0 8px 20px #2878d033}.brand h1{font-size:18px;margin:0}.brand p{margin:3px 0 0;color:var(--muted);font-size:12px}.pill{background:#e3f7f2;color:#117b5b;border-radius:999px;padding:8px 12px;font-size:12px;font-weight:800}.hero{background:linear-gradient(120deg,#14365a,#176da0 62%,#28a8ba);border-radius:25px;color:white;padding:clamp(22px,5vw,42px);position:relative;overflow:hidden;box-shadow:0 18px 45px #15375b24}.hero:after{content:"🏅";position:absolute;right:7%;top:12%;font-size:clamp(65px,12vw,125px);opacity:.22;transform:rotate(12deg)}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:900;color:#9ce9ed}.hero h2{font-size:clamp(30px,5vw,48px);line-height:1.05;margin:12px 0;max-width:610px}.hero p{max-width:570px;color:#e2f4ff;line-height:1.65}.primary{background:var(--gold);color:#24334a;border-radius:12px;padding:13px 18px;font-weight:900;box-shadow:0 5px 0 #dba72c}.primary:hover{filter:brightness(1.04);transform:translateY(-1px)}.secondary{background:#eaf2fc;color:var(--navy);border-radius:11px;padding:11px 15px;font-weight:800}.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:27px 0 13px}.section-title h3{margin:0;font-size:19px}.section-title p{margin:4px 0 0;color:var(--muted);font-size:13px}.zones{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.zone{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:17px;text-align:left;transition:.18s;box-shadow:0 5px 18px #17375b08;min-height:168px}.zone:hover{transform:translateY(-3px);box-shadow:0 12px 25px #17375b12}.zone .emoji{font-size:29px}.zone h4{margin:11px 0 6px;font-size:15px}.zone p{font-size:12px;line-height:1.5;color:var(--muted);margin:0}.zone .small{display:inline-block;margin-top:12px;font-size:11px;font-weight:900;color:var(--blue)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.stat{background:white;border:1px solid var(--line);padding:16px;border-radius:16px}.stat span{font-size:12px;color:var(--muted)}.stat strong{display:block;font-size:24px;margin-top:5px}.panel{background:white;border:1px solid var(--line);border-radius:22px;padding:clamp(18px,4vw,30px);margin-top:18px}.hidden{display:none!important}.quiz-head{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.tag{font-size:12px;background:#e9f5ff;color:#1c65a8;padding:7px 10px;border-radius:999px;font-weight:900}.progress{height:8px;background:#e9eef5;border-radius:999px;overflow:hidden;margin:17px 0 24px}.progress div{height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));width:0;transition:width .25s}.q-number{color:var(--muted);font-size:12px;font-weight:800}.question{font-size:clamp(21px,3.4vw,29px);line-height:1.35;margin:12px 0 20px}.answers{display:grid;gap:10px}.answer{padding:15px 16px;border:1.5px solid var(--line);background:#fff;border-radius:13px;text-align:left;color:var(--ink);font-weight:700;display:flex;gap:12px;align-items:center}.answer .letter{width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:#edf3fa;color:#31516f;flex-shrink:0}.answer:hover:not(:disabled){border-color:#80b9ee;background:#f7fbff}.answer.correct{border-color:var(--green);background:#e9faf3}.answer.wrong{border-color:var(--red);background:#fff0f1}.answer:disabled{cursor:default}.feedback{margin-top:15px;border-radius:13px;padding:14px;line-height:1.55;font-size:14px}.feedback.good{background:#e8f8f1;color:#126a4d}.feedback.bad{background:#fff2e3;color:#8a4d08}.quiz-actions{display:flex;justify-content:space-between;gap:10px;margin-top:18px;flex-wrap:wrap}.score-chip{font-weight:900;color:var(--navy);background:#f0f5fb;padding:8px 12px;border-radius:10px}.result{text-align:center;padding:22px 5px}.medal{font-size:66px}.result h2{font-size:32px;margin:10px 0}.result p{color:var(--muted);line-height:1.6}.result-score{font-size:50px;font-weight:950;color:var(--blue);margin:10px}.name-row{display:flex;gap:8px;max-width:450px;margin:15px auto}.name-row input{min-width:0;flex:1;border:1px solid var(--line);border-radius:11px;padding:12px;font:inherit}.leaderboard{margin-top:18px;text-align:left;border:1px solid var(--line);border-radius:15px;overflow:hidden}.leaderboard h3{padding:14px;margin:0;background:#f5f8fc;font-size:15px}.leaderboard p{padding:0 14px;font-size:13px}.lbrow{display:flex;justify-content:space-between;padding:10px 14px;border-top:1px solid var(--line);font-size:13px}.note{color:var(--muted);font-size:12px;line-height:1.6;margin:20px 2px}.footer{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:12px;padding:22px 2px}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#15375b;color:#fff;padding:12px 17px;border-radius:12px;box-shadow:0 10px 30px #0002;font-size:13px;z-index:5}
+@media(max-width:760px){.zones{grid-template-columns:repeat(2,minmax(0,1fr))}.hero:after{right:2%;top:30%}.top{align-items:flex-start}.stats{gap:8px}.stat{padding:12px}.stat strong{font-size:20px}}
+@media(max-width:420px){.app{padding:12px}.zones{gap:9px}.zone{padding:13px;min-height:158px}.pill{font-size:10px}.brand h1{font-size:16px}.stats{grid-template-columns:1fr 1fr}.stat:last-child{grid-column:span 2}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top">
+ <div class="brand"><div class="logo">⚡</div><div><h1>MISI WIRA CERGAS</h1><p>Permainan pembelajaran PJPK · Tingkatan 1–3</p></div></div>
+ <div class="pill">● MOD PdPR</div>
+</header>
+
+<main id="home">
+ <section class="hero">
+  <div class="eyebrow">Cabaran bermula di sini</div>
+  <h2>Jadi wira yang<br>aktif dan sihat!</h2>
+  <p>Teroka empat zon cabaran, uji pengetahuan PJPK dan kumpul mata. Pilih jawapan yang tepat untuk membuka lencana wira anda.</p>
+  <button class="primary" onclick="startAll()">▶ Mula semua misi</button>
+ </section>
+ <div class="section-title"><div><h3>Pilih zon cabaran</h3><p>Setiap zon mengandungi 5 soalan.</p></div></div>
+ <section class="zones">
+  <button class="zone" onclick="startZone(0)"><div class="emoji">🏃</div><h4>1. Wira Kecergasan</h4><p>Pergerakan, daya tahan, kelenturan dan pemanasan badan.</p><span class="small">5 SOALAN →</span></button>
+  <button class="zone" onclick="startZone(1)"><div class="emoji">🏸</div><h4>2. Arena Sukan</h4><p>Kemahiran sukan, keselamatan dan semangat kesukanan.</p><span class="small">5 SOALAN →</span></button>
+  <button class="zone" onclick="startZone(2)"><div class="emoji">🥗</div><h4>3. Detektif Kesihatan</h4><p>Pemakanan seimbang, air dan kebersihan diri.</p><span class="small">5 SOALAN →</span></button>
+  <button class="zone" onclick="startZone(3)"><div class="emoji">🛡️</div><h4>4. Pilihan Bijak</h4><p>Keselamatan, pengurusan diri dan gaya hidup sihat.</p><span class="small">5 SOALAN →</span></button>
+ </section>
+ <section class="stats">
+  <div class="stat"><span>Jumlah soalan</span><strong>20</strong></div>
+  <div class="stat"><span>Mata maksimum</span><strong>200</strong></div>
+  <div class="stat"><span>Ganjaran</span><strong>🏅 4 lencana</strong></div>
+ </section>
+ <p class="note">Nota keselamatan: Untuk aktiviti fizikal, pilih ruang yang lapang dan tidak licin, ikut kemampuan sendiri serta berhenti jika berasa sakit, pening atau tidak selesa. Permainan ini ialah bahan pembelajaran dan bukan pengganti pengawasan guru atau nasihat profesional kesihatan.</p>
+</main>
+
+<section id="quiz" class="panel hidden" aria-live="polite">
+ <div class="quiz-head"><span id="zoneTag" class="tag">ZON 1</span><span class="score-chip">⭐ Mata: <span id="score">0</span></span></div>
+ <div class="progress"><div id="progressFill"></div></div>
+ <div class="q-number" id="qNumber">SOALAN 1 DARIPADA 5</div>
+ <h2 class="question" id="questionText"></h2>
+ <div id="answers" class="answers"></div>
+ <div id="feedback" class="feedback hidden"></div>
+ <div class="quiz-actions"><button class="secondary" onclick="goHome()">← Menu utama</button><button id="nextBtn" class="primary" onclick="nextQuestion()" disabled>Seterusnya →</button></div>
+</section>
+
+<section id="result" class="panel hidden" aria-live="polite">
+ <div class="result">
+  <div class="medal" id="medal">🏅</div>
+  <div class="eyebrow" style="color:#2878d0">MISI SELESAI</div>
+  <h2 id="resultTitle">Syabas, Wira!</h2>
+  <div class="result-score"><span id="finalScore">0</span><span style="font-size:19px;color:#69788d"> / <span id="maxScore">50</span></span></div>
+  <p id="resultText"></p>
+  <div class="name-row"><input id="playerName" maxlength="35" placeholder="Nama murid (pilihan)" aria-label="Nama murid"><button class="primary" onclick="saveResult()">Simpan skor</button></div>
+  <button class="secondary" onclick="startAll()" style="margin:4px">↻ Main semula semua misi</button>
+  <button class="secondary" onclick="goHome()" style="margin:4px">⌂ Menu utama</button>
+ </div>
+ <div class="leaderboard"><h3>🏆 Rekod skor pada peranti ini</h3><div id="leaderboardRows"><p>Belum ada rekod disimpan.</p></div></div>
+ <p class="note">Rekod disimpan dalam storan pelayar pada peranti ini sahaja. Ia tidak dihantar kepada guru secara automatik dan mungkin tidak dikongsi antara telefon atau komputer.</p>
+</section>
+<footer class="footer"><span>PJPK · Belajar, bergerak, sihat</span><span>Bahan PdPR interaktif · Versi 1.0</span></footer>
+</div>
+<script>
+const zones = [
+ {name:"Wira Kecergasan",emoji:"🏃",qs:[
+  {q:"Apakah tujuan utama memanaskan badan sebelum bersukan?",a:["Menyediakan tubuh untuk aktiviti fizikal","Membuatkan badan terus letih","Menggantikan semua latihan"],c:0,e:"Memanaskan badan membantu menyediakan tubuh secara beransur-ansur sebelum aktiviti fizikal."},
+  {q:"Aktiviti yang manakah paling berkaitan dengan daya tahan kardiovaskular?",a:["Duduk membaca untuk tempoh lama","Berjalan pantas atau berjoging mengikut kemampuan","Mengangkat satu buku sekali"],c:1,e:"Aktiviti aerobik seperti berjalan pantas boleh membantu meningkatkan daya tahan jantung dan paru-paru."},
+  {q:"Apakah maksud kelenturan?",a:["Keupayaan menggerakkan sendi melalui julat pergerakan yang sesuai","Keupayaan berlari paling pantas sahaja","Keupayaan menahan nafas"],c:0,e:"Kelenturan berkaitan julat pergerakan sendi dan otot. Lakukan regangan dengan terkawal, tanpa memaksa."},
+  {q:"Semasa melakukan aktiviti fizikal, apakah tindakan yang wajar jika berasa pening?",a:["Teruskan supaya menang","Berhenti, berehat dan maklumkan orang dewasa/guru","Berlari lebih laju"],c:1,e:"Berhenti apabila berasa pening atau tidak sihat, berehat di tempat selamat dan maklumkan guru atau orang dewasa."},
+  {q:"Mengapakah aktiviti menyejukkan badan dilakukan selepas bersenam?",a:["Membantu tubuh beralih secara beransur-ansur kepada keadaan rehat","Supaya tidak perlu minum air","Untuk menggantikan tidur"],c:0,e:"Aktiviti ringan dan regangan terkawal membantu peralihan daripada aktiviti kepada rehat."}
+ ]},
+ {name:"Arena Sukan",emoji:"🏸",qs:[
+  {q:"Apakah sikap terbaik apabila pasukan kita kalah dalam pertandingan?",a:["Menyalahkan semua rakan","Menghormati lawan dan belajar daripada pengalaman","Enggan bersalaman"],c:1,e:"Semangat kesukanan termasuk menghormati lawan, menerima keputusan dan memperbaiki prestasi."},
+  {q:"Dalam permainan badminton, bulu tangkis dipukul menggunakan…",a:["Raket","Kayu hoki","Bola"],c:0,e:"Badminton dimainkan menggunakan raket dan bulu tangkis."},
+  {q:"Apakah yang perlu dilakukan sebelum menggunakan peralatan sukan?",a:["Periksa keadaan peralatan dan ikut arahan guru","Gunakan walaupun rosak","Baling kepada rakan"],c:0,e:"Pemeriksaan peralatan dan pematuhan arahan mengurangkan risiko kecederaan."},
+  {q:"Mengapakah peraturan permainan perlu dipatuhi?",a:["Supaya permainan selamat, adil dan teratur","Supaya seorang pemain sentiasa menang","Supaya permainan boleh dihentikan sesuka hati"],c:0,e:"Peraturan membantu memastikan keselamatan, keadilan dan kelancaran permainan."},
+  {q:"Apakah tindakan yang sesuai jika rakan terjatuh dan kelihatan cedera?",a:["Ketawakan rakan","Alihkan rakan secara kasar","Maklumkan guru dan dapatkan bantuan yang sesuai"],c:2,e:"Maklumkan guru dengan segera. Jangan menggerakkan orang yang mungkin mengalami kecederaan serius tanpa arahan orang terlatih."}
+ ]},
+ {name:"Detektif Kesihatan",emoji:"🥗",qs:[
+  {q:"Apakah amalan yang menyokong pemakanan seimbang?",a:["Makan pelbagai jenis makanan dalam kuantiti yang sesuai","Makan satu jenis makanan sahaja setiap hari","Tidak mengambil sayur langsung"],c:0,e:"Pemakanan seimbang melibatkan kepelbagaian makanan dan kuantiti yang bersesuaian dengan keperluan individu."},
+  {q:"Apakah pilihan minuman yang sesuai untuk kebanyakan aktiviti harian?",a:["Air kosong","Minuman bergas setiap kali dahaga","Minuman tenaga tanpa keperluan"],c:0,e:"Air kosong ialah pilihan yang baik untuk mengekalkan hidrasi bagi kebanyakan aktiviti harian."},
+  {q:"Bilakah tangan perlu dibasuh dengan sabun?",a:["Selepas menggunakan tandas dan sebelum makan","Hanya apabila tangan kelihatan sangat kotor","Sekali seminggu sahaja"],c:0,e:"Basuh tangan dengan sabun pada waktu penting seperti selepas ke tandas dan sebelum makan."},
+  {q:"Apakah fungsi utama protein dalam pemakanan?",a:["Membantu pertumbuhan dan pembaikan tisu badan","Menggantikan air dalam badan","Menghapuskan keperluan tidur"],c:0,e:"Protein menyokong pertumbuhan dan pembaikan tisu; tubuh juga memerlukan nutrien lain."},
+  {q:"Apakah amalan kebersihan mulut yang baik?",a:["Memberus gigi secara teratur menggunakan teknik yang betul","Berkongsi berus gigi","Memberus gigi hanya apabila sakit"],c:0,e:"Penjagaan mulut yang konsisten membantu menjaga gigi dan gusi."}
+ ]},
+ {name:"Pilihan Bijak",emoji:"🛡️",qs:[
+  {q:"Rakan mengajak anda melakukan aktiviti fizikal di kawasan jalan raya yang sibuk. Apakah pilihan terbaik?",a:["Ikut sahaja","Pilih kawasan lapang dan selamat dengan pengetahuan orang dewasa","Berlari sambil melihat telefon"],c:1,e:"Pilih kawasan yang selamat, lapang dan sesuai; elakkan jalan raya serta gangguan telefon."},
+  {q:"Apakah tindakan yang baik untuk mengurus tekanan selepas hari persekolahan yang sibuk?",a:["Berbincang dengan orang dipercayai dan berehat dengan sihat","Memendam semua perasaan selama-lamanya","Mencederakan diri"],c:0,e:"Berkongsi perasaan dengan orang yang dipercayai dan menggunakan strategi sihat boleh membantu mengurus tekanan."},
+  {q:"Mengapakah tidur yang mencukupi penting kepada remaja?",a:["Menyokong pembelajaran, pemulihan dan kesihatan","Menggantikan semua aktiviti fizikal","Membolehkan kita tidak perlu makan"],c:0,e:"Tidur yang mencukupi menyokong tumpuan, pembelajaran, emosi dan pemulihan tubuh."},
+  {q:"Anda menerima mesej dalam talian yang membuat anda tidak selesa. Apakah tindakan sesuai?",a:["Balas dengan maklumat peribadi","Simpan semuanya sebagai rahsia walaupun berasa terancam","Jangan kongsi maklumat peribadi dan beritahu orang dewasa dipercayai"],c:2,e:"Lindungi maklumat peribadi dan dapatkan bantuan orang dewasa dipercayai jika sesuatu dalam talian membuat anda tidak selesa."},
+  {q:"Apakah cara yang baik untuk membina rutin sihat?",a:["Tetapkan sasaran realistik dan lakukan secara konsisten","Buat semua perubahan secara ekstrem dalam sehari","Berhenti apabila tidak sempurna"],c:0,e:"Sasaran kecil, realistik dan konsisten lebih mudah dikekalkan. Sesuaikan aktiviti dengan kemampuan diri."}
+ ]}
+];
+let activeQuestions=[], index=0, score=0, correctCount=0, currentZone=-1, answered=false, sessionMax=0;
+const $=id=>document.getElementById(id);
+function showOnly(id){["home","quiz","result"].forEach(x=>$(x).classList.toggle("hidden",x!==id));window.scrollTo({top:0,behavior:"smooth"});}
+function startAll(){currentZone=-1;activeQuestions=zones.flatMap((z,zi)=>z.qs.map(q=>({...q,zoneName:z.name,zoneEmoji:z.emoji,zoneIndex:zi})));begin();}
+function startZone(i){currentZone=i;activeQuestions=zones[i].qs.map(q=>({...q,zoneName:zones[i].name,zoneEmoji:zones[i].emoji,zoneIndex:i}));begin();}
+function begin(){index=0;score=0;correctCount=0;sessionMax=activeQuestions.length*10;answered=false;showOnly("quiz");renderQuestion();}
+function renderQuestion(){answered=false;const item=activeQuestions[index];$("zoneTag").textContent=item.zoneEmoji+" ZON "+(item.zoneIndex+1)+" · "+item.zoneName;$("score").textContent=score;$("qNumber").textContent=`SOALAN ${index+1} DARIPADA ${activeQuestions.length}`;$("questionText").textContent=item.q;$("progressFill").style.width=(index/activeQuestions.length*100)+"%";$("answers").innerHTML="";$("feedback").className="feedback hidden";$("feedback").textContent="";$("nextBtn").disabled=true;$("nextBtn").textContent=index===activeQuestions.length-1?"Lihat keputusan →":"Seterusnya →";item.a.forEach((txt,i)=>{const b=document.createElement("button");b.className="answer";const letter=document.createElement("span");letter.className="letter";letter.textContent=String.fromCharCode(65+i);const label=document.createElement("span");label.textContent=txt;b.append(letter,label);b.onclick=()=>chooseAnswer(i);$("answers").appendChild(b);});}
+function chooseAnswer(choice){if(answered)return;answered=true;const item=activeQuestions[index];const buttons=[...$("answers").querySelectorAll("button")];buttons.forEach((b,i)=>{b.disabled=true;if(i===item.c)b.classList.add("correct");if(i===choice&&i!==item.c)b.classList.add("wrong");});const good=choice===item.c;if(good){score+=10;correctCount++;} $("score").textContent=score;$("feedback").className="feedback "+(good?"good":"bad");$("feedback").textContent=(good?"✅ Tepat! ":"💡 Belum tepat. ")+item.e;$("nextBtn").disabled=false;$("progressFill").style.width=((index+1)/activeQuestions.length*100)+"%";}
+function nextQuestion(){if(!answered)return;if(index<activeQuestions.length-1){index++;renderQuestion();}else showResult();}
+function showResult(){showOnly("result");$("finalScore").textContent=score;$("maxScore").textContent=sessionMax;const pct=score/sessionMax;let medal,title,desc;if(pct>=.9){medal="🏆";title="Wira Cemerlang!";desc="Hebat! Anda menunjukkan penguasaan yang sangat baik. Teruskan amalan aktif dan sihat.";}else if(pct>=.7){medal="🥇";title="Wira Hebat!";desc="Bagus! Anda semakin menguasai pengetahuan PJPK. Semak penerangan dan cuba lagi untuk skor lebih tinggi.";}else if(pct>=.5){medal="🥈";title="Wira Berusaha!";desc="Usaha yang baik. Baca semula maklum balas dan cuba misi sekali lagi.";}else{medal="🌱";title="Wira Sedang Belajar!";desc="Setiap cubaan membantu anda belajar. Ulang kaji dan cuba lagi—anda boleh maju selangkah demi selangkah.";} $("medal").textContent=medal;$("resultTitle").textContent=title;$("resultText").textContent=`Anda menjawab ${correctCount} daripada ${activeQuestions.length} soalan dengan betul. ${desc}`;$("playerName").value="";renderLeaderboard();}
+function saveResult(){const name=$("playerName").value.trim()||"Murid";let rows=[];try{rows=JSON.parse(localStorage.getItem("wiraCergasScores")||"[]");if(!Array.isArray(rows))rows=[];}catch(e){rows=[];}rows.push({name:name.slice(0,35),score:score,max:sessionMax,date:new Date().toLocaleDateString("ms-MY")});rows.sort((a,b)=>(b.score/b.max)-(a.score/a.max)||b.score-a.score);rows=rows.slice(0,10);try{localStorage.setItem("wiraCergasScores",JSON.stringify(rows));}catch(e){toast("Pelayar tidak membenarkan rekod disimpan. Skor semasa masih dipaparkan.");return;}renderLeaderboard();toast("Skor berjaya disimpan pada peranti ini.");}
+function renderLeaderboard(){let rows=[];try{rows=JSON.parse(localStorage.getItem("wiraCergasScores")||"[]");if(!Array.isArray(rows))rows=[];}catch(e){rows=[];}const root=$("leaderboardRows");root.innerHTML="";if(!rows.length){const p=document.createElement("p");p.textContent="Belum ada rekod disimpan.";root.appendChild(p);return;}rows.forEach((r,i)=>{const d=document.createElement("div");d.className="lbrow";const left=document.createElement("span");left.textContent=`${i+1}. ${r.name} · ${r.date}`;const right=document.createElement("strong");right.textContent=`${r.score}/${r.max}`;d.append(left,right);root.appendChild(d);});}
+function goHome(){showOnly("home");}
+let toastTimer;function toast(msg){let t=document.querySelector(".toast");if(t)t.remove();t=document.createElement("div");t.className="toast";t.textContent=msg;document.body.appendChild(t);clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.remove(),2600);}
+</script>
+</body>
+</html>
